@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 40px;
+    font-family: "ubuntu", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.table-responsive{
+    max-width: 900px;
+    border: 1px solid rgb(68, 68, 68);
+    background-color: #ffffff;
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 4px;
+   
+}
+table{
+    width: 100%;
+    font-size: 14px;
+    color: #383838;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+table>thead{
+    background-color: rgb(143, 230, 227);
+    color: rgb(59, 59, 59);
+}
+table th, table td{
+    border: 1px solid rgb(200, 199, 199);
+    padding: 4px 7px;
+}
+
+table>tbody>tr>td>img{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid whitesmoke;
+    box-shadow: 0 2px 6px #0003;
+
+}
+
+.action_btn{
+    display: flex;
+    justify-content: center;
+    gap:3px;
+}
+
+.action_btn>a{
+    text-decoration: none;
+    color: #444;
+    /*background: whitesmoke;*/
+    border: 1px solid;
+    display: inline-block;
+    padding: 7px 17px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.action_btn>a:nth-child(1){
+    background: rgb(213, 217, 252);
+    color: rgb(81, 81, 81);
+}
+.action_btn>a:nth-child(2){
+    background: rgb(255, 143, 143);
+    color: rgb(69, 69, 69);
+}
+ 
+.action_btn>a:hover{
+    box-shadow: 0 2px 8px #0003;
+}
+
+table>tbody>tr{
+    background-color: rgb(255, 255, 255);
+    transition: 0.1s ease-in-out;
+}
+table>tbody>tr:nth-child(even){
+    background-color: rgb(226, 224, 224);
+}
+
+table>tbody>tr:hover{
+    filter: drop-shadow(0 2px 6px #0002);
+}
