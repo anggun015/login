@@ -1,0 +1,29 @@
+table{
+    width: 20%;
+    font-size: 17px;
+    color: #383838;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+table>thead{
+    background-color: rgb(143, 230, 227);
+    color: rgb(59, 59, 59);
+}
+table th, table td{
+    border: 1px solid rgb(45, 43, 127);
+    padding: 4px 7px;
+}
+h2 {
+    color: rgb(255, 255, 255);
+}
+tr{
+    color:aqua;
+}
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span
+{
+    color:#fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}

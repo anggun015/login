@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objek di Javascript</h1>
+    <script>
+        const siswa = {
+            namaDepan:"Steven",
+            namaBelakang:"Bryan",
+            usia:15,
+            hoby:["gaming", "coding"],
+        };
+
+        //mengakses data objek
+        console.log(siswa.namaDepan);
+        console.log(`Halo, nama saya ${siswa.namaDepan} ${siswa.namaBelakang}`);
+        console.log(`hoby saya ${siswa.hoby}`);
+
+        //memodifikasi nama data objek
+        siswa.namaDepan = "Deril";
+        siswa.namaBelakang = "Veno";
+        console.log(`nama setelah diubah ${siswa.namaDepan} ${siswa.namaBelakang}`);
+
+        //merubah data yg propertinya tdk ada
+        //maka otomatis ditambahkan   
+        siswa.jurusan = "RPL";
+        console.log(siswa);
+
+        //menghapus salah satu properti
+        
+    </script>
+</body>
+</html>
